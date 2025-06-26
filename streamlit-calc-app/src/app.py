@@ -85,7 +85,7 @@ def main():
     if selected_main == "Home":
         st.title("Drilling Formula Calculator")
         # Read and format content.txt
-        with open("content.txt", "r") as f:
+        with open("src/content.txt", "r") as f:
             lines = f.readlines()
 
         formatted = ""
