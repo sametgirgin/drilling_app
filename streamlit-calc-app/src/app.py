@@ -85,7 +85,7 @@ def main():
     if selected_main == "Home":
         st.title("Drilling Formula Calculator")
         # Read and format content.txt
-        with open("https://github.com/sametgirgin/drilling_app/blob/main/streamlit-calc-app/content.txt", "r") as f:
+        with open("https://raw.githubusercontent.com/sametgirgin/drilling_app/main/streamlit-calc-app/content.txt", "r") as f:
             lines = f.readlines()
 
         formatted = ""
