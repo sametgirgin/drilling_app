@@ -68,6 +68,8 @@ from views.annular_pressure_loss import annular_pressure_loss
 from views.critical_rpm_calculator import critical_rpm_calculator
 from views.advanced_annular_pressure_loss_ecd import advanced_annular_pressure_loss_ecd
 from views.bottom_hole_pressure_dry_gas import bottom_hole_pressure_dry_gas
+import os
+
 def main():
     main_tabs = [
         "Home",
@@ -85,7 +87,8 @@ def main():
     if selected_main == "Home":
         st.title("Drilling Formula Calculator")
         # Read and format content.txt
-        with open("src/content.txt", "r") as f:
+        file_path = os.path.join(os.path.dirname(__file__), "content.txt")
+        with open(file_path, "r") as f:
             lines = f.readlines()
 
         formatted = ""
